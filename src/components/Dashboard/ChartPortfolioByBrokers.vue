@@ -50,4 +50,4 @@ export default {
     return { option };
   },
 };
-</script>./BarChartPortfolioByBrokers.vue
+</script>

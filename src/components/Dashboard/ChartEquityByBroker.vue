@@ -52,4 +52,4 @@ export default {
     };
   },
 };
-</script>./BarChartEquityByBroker.vue
+</script>

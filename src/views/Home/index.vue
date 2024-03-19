@@ -15,10 +15,10 @@
     </div>
     <div class="flex flex-wrap gap-5 w-full">
       <div v-if="portfolioByBrokersData.values.length > 0" class="flex-1 min-w-[200px]">
-        <BarChartPortfolioByBrokers :data="portfolioByBrokersData" />
+        <ChartPortfolioByBrokers :data="portfolioByBrokersData" />
       </div>
       <div v-if="equityByBrokerData.values.length > 0" class="flex-1 min-w-[200px]">
-        <BarChartequityByBroker :data="equityByBrokerData" />
+        <ChartequityByBroker :data="equityByBrokerData" />
       </div>
     </div>
 
@@ -30,15 +30,15 @@ import { ref, onMounted } from 'vue';
 import { api } from '../../services/api';
 import CardNumber from '../../components/Dashboard/CardNumber.vue';
 import LineChartEquityHistory from '../../components/Dashboard/LineChartEquityHistory.vue';
-import BarChartPortfolioByBrokers from "../../components/Dashboard/BarChartPortfolioByBrokers.vue";
-import BarChartequityByBroker from '../../components/Dashboard/BarChartequityByBroker.vue';
+import ChartPortfolioByBrokers from "../../components/Dashboard/ChartPortfolioByBrokers.vue";
+import ChartequityByBroker from '../../components/Dashboard/ChartequityByBroker.vue';
 
 export default {
   components: {
     CardNumber,
     LineChartEquityHistory,
-    BarChartPortfolioByBrokers,
-    BarChartequityByBroker,
+    ChartPortfolioByBrokers,
+    ChartequityByBroker,
   },
   setup() {
     const loading = ref(false);
@@ -118,4 +118,4 @@ export default {
     };
   },
 };
-</script>../../components/Dashboard/BarChartEquityByBroker.vue
+</script>../../components/Dashboard/ChartEquityByBroker.vue
