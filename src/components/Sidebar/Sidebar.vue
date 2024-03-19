@@ -26,7 +26,7 @@
                     :color="
                       isActiveMenuItem(menuItem.primaryItem.link)
                         ? '#1C64F2'
-                        : '#111827'
+                        : '#111826'
                     "
                   />
 
