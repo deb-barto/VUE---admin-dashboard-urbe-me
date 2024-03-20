@@ -27,11 +27,11 @@
 
 <script>
 import { ref, onMounted } from 'vue';
-import { api } from '../../services/api';
-import CardNumber from '../../components/Dashboard/CardNumber.vue';
-import LineChartEquityHistory from '../../components/Dashboard/LineChartEquityHistory.vue';
-import ChartPortfolioByBrokers from "../../components/Dashboard/ChartPortfolioByBrokers.vue";
-import ChartequityByBroker from '../../components/Dashboard/ChartequityByBroker.vue';
+import { api } from '@/services/api';
+import CardNumber from '@/components/Dashboard/CardNumber.vue';
+import LineChartEquityHistory from '@/components/Dashboard/LineChartEquityHistory.vue';
+import ChartPortfolioByBrokers from "@/components/Dashboard/ChartPortfolioByBrokers.vue";
+import ChartequityByBroker from '@/components/Dashboard/ChartequityByBroker.vue';
 
 export default {
   components: {
@@ -118,4 +118,4 @@ export default {
     };
   },
 };
-</script>../../components/Dashboard/ChartEquityByBroker.vue
+</script>
