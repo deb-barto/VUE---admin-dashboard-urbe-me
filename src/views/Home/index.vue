@@ -18,7 +18,7 @@
         <ChartPortfolioByBrokers :data="portfolioByBrokersData" />
       </div>
       <div v-if="equityByBrokerData.values.length > 0" class="flex-1 min-w-[200px]">
-        <ChartequityByBroker :data="equityByBrokerData" />
+        <ChartEquityByBroker :data="equityByBrokerData" />
       </div>
     </div>
 
@@ -31,14 +31,14 @@ import { api } from '@/services/api';
 import CardNumber from '@/components/Dashboard/CardNumber.vue';
 import LineChartEquityHistory from '@/components/Dashboard/LineChartEquityHistory.vue';
 import ChartPortfolioByBrokers from "@/components/Dashboard/ChartPortfolioByBrokers.vue";
-import ChartequityByBroker from '@/components/Dashboard/ChartequityByBroker.vue';
+import ChartEquityByBroker from '../../components/Tag/ChartEquityByBroker.vue';
 
 export default {
   components: {
     CardNumber,
     LineChartEquityHistory,
     ChartPortfolioByBrokers,
-    ChartequityByBroker,
+    ChartEquityByBroker,
   },
   setup() {
     const loading = ref(false);

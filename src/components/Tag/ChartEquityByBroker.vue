@@ -1,5 +1,5 @@
 <template>
-  <CardDefault title="Patrimônio por Corretora" hasIcon>
+  <CardDefault title="Patrimônio Corretoras" hasIcon>
     <div class="w-full h-72">
       <v-chart class="chart" :option="option" autoresize />
     </div>
